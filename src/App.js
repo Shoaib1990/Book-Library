@@ -8,6 +8,7 @@ import Main from './components/Main';
 function App() {
 
   return (
+    // Defing Routes
     <Router>
       <div className="App">
         <Routes>

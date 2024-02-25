@@ -29,7 +29,8 @@ function Main() {
     <div className="main">
       
         <Header />
-        <SearchBar searchName={searchName} />
+        {/* Passing props/var 'searchName' to grap search term */}
+        <SearchBar searchName={searchName} /> 
         <Books searchedBooks={books} />
         <Footer />
         

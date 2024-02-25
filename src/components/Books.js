@@ -11,6 +11,7 @@ const Books = ({ searchedBooks }) => {
             {booksArray.map((book, index) => {
 
                 return (
+                    // Passing necessary data to BookDetails component using Route
                     <Link key={index} className='book_link'
                         to={`/books/${index}`}
                         state={{
