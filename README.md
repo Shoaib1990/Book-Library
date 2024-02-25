@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Google Books Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
 
-## Available Scripts
+This React application utilizes the Google Books API to allow users to search for books and view details about each book. The app is built with various components for a modular structure, and it incorporates React Router for navigation. Additionally, it leverages important React features like `useEffect` and `useState`, and demonstrates the capability of passing data from child components to parent components.
 
-In the project directory, you can run:
+  
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Overview](#overview)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Features](#features)
 
-### `npm test`
+- [Components](#components)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Installation](#installation)
 
-### `npm run build`
+- [Usage](#usage)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Dependencies](#dependencies)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Contributing](#contributing)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [License](#license)
 
-### `npm run eject`
+  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This React app provides a simple and user-friendly interface for searching and exploring books using the Google Books API. The application is structured into various components such as Header, Footer, Main, Searchbar, Books, and BookDetails, offering a clean and organized codebase.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-  **Search Functionality**: Users can enter search queries in the provided search bar to retrieve a list of books matching their criteria.
 
-### Code Splitting
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-  **React Router Navigation**: The app uses React Router for smooth navigation between different views, enhancing the overall user experience.
 
-### Analyzing the Bundle Size
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-  **Modular Components**: The application is built with modular components, making the codebase easy to understand, maintain, and extend.
 
-### Making a Progressive Web App
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-  **State Management with Hooks**: The app utilizes React hooks, including `useState` for managing state and `useEffect` for handling side effects, ensuring efficient and effective state management.
 
-### Advanced Configuration
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-  **Data Passing from Child to Parent**: The application demonstrates the advanced feature of passing data from child components to parent components, enhancing the flexibility of data flow within the application.
 
-### Deployment
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Components
 
-### `npm run build` fails to minify
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-  **Header**: Displays the application's header, providing a consistent and recognizable layout.
+
+  
+
+-  **Footer**: Features a footer section for additional information and links.
+
+  
+
+-  **Main**: Acts as the main container for rendering other components based on the application's state.
+
+  
+
+-  **Searchbar**: Includes a search bar where users can input their book queries.
+
+  
+
+-  **Books**: Renders a list of books based on the search results.
+
+  
+
+-  **BookDetails**: Displays detailed information about a selected book.
+
+  
+
+## Installation
+
+  
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Shoaib1990/Book-Library.git ```
+
+```
+2. Navigate to the project directory:
+```bash
+cd books-library
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+## Usage
+
+1. Start the application:
+```bash
+npm start
+```
+
+2. Open your browser and visit `http://localhost:3000` to explore the Google Books Search App.
+
+## Dependencies
+
+-   React
+-   React Router
+
+Make sure to check the `package.json` file for the complete list of dependencies.
